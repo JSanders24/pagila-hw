@@ -4,7 +4,7 @@
  */
 SELECT first_name, last_name, sum(amount)
 FROM staff
-JOIN payment USING (staff_is)
+JOIN payment USING (staff_id)
 WHERE payment_date >= ('2020-01-01 00:00:00') AND payment_date < ('2020-02-01 00:00:00')
 GROUP BY first_name, last_name
 ORDER BY "sum" ASC;

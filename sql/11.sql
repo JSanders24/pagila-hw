@@ -4,7 +4,7 @@
  * Order by film title alphabetically.
  */
 SELECT film_id, title, count(film_id)
-SELECT film
+FROM film
 JOIN inventory USING (film_id)
 WHERE title ILIKE 'h%'
 GROUP BY film_id
