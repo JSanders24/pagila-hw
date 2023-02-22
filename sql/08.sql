@@ -4,7 +4,7 @@
  * Order by last name.
  */
 
-SELECT first_name, last_name, address AS street_adress
+SELECT first_name, last_name, address AS street_address
 FROM staff
 JOIN address USING (address_id)
 ORDER BY last_name ASC;

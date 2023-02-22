@@ -10,4 +10,4 @@ JOIN film USING (film_id)
 JOIN language USING (language_id)
 WHERE language.name = 'English'
 GROUP BY category.name
-GROUP BY category.name ASC;
+ORDER BY category.name ASC;
