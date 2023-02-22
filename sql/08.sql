@@ -3,6 +3,7 @@
  * Use the tables staff and address.
  * Order by last name.
  */
+
 SELECT first_name, last_name, address AS street_adress
 FROM staff
 JOIN address USING (address_id)
